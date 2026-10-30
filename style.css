@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #1c2421;
+  color: #f5f0df;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+main { width: min(92%, 580px); margin: 55px auto 30px; }
+.eyebrow { color: #b7c4ad; font-size: 12px; letter-spacing: 2px; }
+h1 { color: #e6c575; font-family: Georgia, serif; font-size: 52px; margin: 20px 0 8px; }
+.intro { color: #bdc8bf; margin-bottom: 28px; }
+.table { padding: 24px 18px; background: #304a3d; border: 2px solid #81947d; border-radius: 8px; }
+#message-el { min-height: 48px; margin: 0 0 18px; font-style: italic; line-height: 1.5; }
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; min-height: 106px; }
+.card, .empty-card { width: 70px; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 5px; font: bold 30px Georgia, serif; }
+.card { color: #253b30; background: #f5f0df; border: 2px solid #d7cfb7; }
+.empty-card { color: #b1c0af; border: 2px dashed #829783; }
+.sum { font-size: 19px; margin: 22px 0; }
+.sum strong { font-size: 30px; }
+.sum span { color: #c0cdbf; }
+.buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+button { cursor: pointer; padding: 13px 20px; font: bold 14px Arial, sans-serif; border: 2px solid #e6c575; border-radius: 3px; background: #e6c575; color: #253b30; }
+#new-card-btn { background: transparent; color: #f4e0aa; }
+button:hover:not(:disabled) { background: #f4dda3; color: #253b30; }
+button:focus-visible, summary:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+button:disabled { opacity: .45; cursor: not-allowed; }
+.player { font-size: 13px; color: #c0cdbf; margin: 20px 0 0; }
+details { text-align: left; margin-top: 22px; color: #c5cfc7; font-size: 14px; line-height: 1.6; }
+summary { cursor: pointer; color: #e6c575; }
+footer { margin-top: 30px; font-size: 12px; line-height: 1.8; color: #b0bdb4; }
+footer small { font-size: 11px; }
+@media (max-width: 400px) { main { margin-top: 30px; } h1 { font-size: 44px; } .table { padding: 22px 12px; } }
